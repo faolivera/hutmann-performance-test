@@ -39,7 +39,7 @@ results will be saved on docs/ directory
 [Report for custom Dispatcher](https://faolivera.github.io/hutmann-performance-test/report_2017-05-0219:12:30/custom-dispatcher-report/)
 
 |Request Time   | Default Dispatcher | Custom Dispatcher|
-|-------------  | -------------------| ---------------
+|-------------  | -------------------| ---------------|
 |   <100 ms     | 19.65%             | 12.08%|
 |>100ms < 200ms | 11.05%             | 6.55%| 
 |>200ms < 300ms | 11.55%             | 7.4% |
