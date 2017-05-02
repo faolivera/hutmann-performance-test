@@ -1,0 +1,10 @@
+{
+  "simulation": "performance.BasicSimulation",
+  "simulationId": "basicsimulation",
+  "start": 1493744574713,
+  "description": "",
+  "scenarios": ["CustomDispatcherTest"],
+  "assertions": [
+
+  ]
+}

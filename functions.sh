@@ -7,9 +7,10 @@ function runPerformanceTest {
     REQUESTS=$3
     DURATION=$4
     CONF_FILE=$5
+    TEST_NAME=$6
     
     startServer $APP_DIR $PORT $CONF_FILE
-    runGatling $PORT $REQUESTS $DURATION
+    runGatling $PORT $REQUESTS $DURATION $TEST_NAME
     stopServer $APP_DIR
 }
 
@@ -40,7 +41,8 @@ function runGatling {
     PORT=$1
     REQUESTS=$2
     DURATION=$3
-    sbt gatling:test -Dtest.port=$PORT -Dtest.requests=$REQUESTS -Dtest.duration=$DURATION > /tmp/hutman_performance_test
+    TEST_NAME=$4
+    sbt gatling:test -Dtest.port=$PORT -Dtest.requests=$REQUESTS -Dtest.duration=$DURATION -Dtest.name=$TEST_NAME > /tmp/hutman_performance_test
 }
 
 function getLastReportFile {

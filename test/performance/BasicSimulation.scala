@@ -11,8 +11,9 @@ class BasicSimulation extends Simulation {
   val httpConf = http.baseURL(s"http://localhost:$port")
   val users = System.getProperty("test.requests").toInt
   val duration = System.getProperty("test.duration").toInt
+  val scenarioName = System.getProperty("test.name")
 
-  val basicScenario = scenario("Basic Scenario")
+  val basicScenario = scenario(scenarioName)
     .exec(http("basic request").get("/"))
     .exec(http("parse json from memory").get("/parse-json"))
   //.exec(http("parse json from disk").get("/parse-json-from-disk"))
