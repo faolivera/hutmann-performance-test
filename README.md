@@ -16,12 +16,12 @@ results will be saved on docs/ directory
 [Report for default Dispatcher](https://faolivera.github.io/hutmann-performance-test/report_2017-05-0218:16:46/default-dispatcher-report/)
 [Report for custom Dispatcher](https://faolivera.github.io/hutmann-performance-test/report_2017-05-0218:16:46/custom-dispatcher-report/)
 
-Request Time   | Default Dispatcher | Custom Dispatcher
--------------  | -------------------| ---------------
-   <100 ms     | 9.95%              | 7.15%
->100ms < 200ms | 10.4%              | 10.3% 
->200ms < 300ms | 9.55%              | 11.05%   
->300ms < 400ms | 7.25%              | 8.94%   
+|Request Time   | Default Dispatcher | Custom Dispatcher|
+|-------------  | -------------------| ---------------  |
+|   <100 ms     | 9.95%              | 7.15%            | 
+|>100ms < 200ms | 10.4%              | 10.3%            | 
+|>200ms < 300ms | 9.55%              | 11.05%           | 
+|>300ms < 400ms | 7.25%              | 8.94%            |
 
 ### second run
 [Report for default Dispatcher](https://faolivera.github.io/hutmann-performance-test/report_2017-05-0219:03:40/default-dispatcher-report/)
